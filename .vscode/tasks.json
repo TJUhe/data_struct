@@ -4,16 +4,16 @@
     {
       "label": "CMake: configure",
       "type": "shell",
-      "command": "cmake",
-      "args": ["--preset", "debug"],
+      "command": "${workspaceFolder}/scripts/cmake_msvc_ninja.bat",
+      "args": ["configure"],
       "group": "build",
       "problemMatcher": []
     },
     {
       "label": "CMake: build debug",
       "type": "shell",
-      "command": "cmake",
-      "args": ["--build", "--preset", "debug"],
+      "command": "${workspaceFolder}/scripts/cmake_msvc_ninja.bat",
+      "args": ["build"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -24,11 +24,10 @@
     {
       "label": "CTest: run smoke tests",
       "type": "shell",
-      "command": "ctest",
-      "args": ["--preset", "debug"],
+      "command": "${workspaceFolder}/scripts/cmake_msvc_ninja.bat",
+      "args": ["test"],
       "dependsOn": "CMake: build debug",
       "problemMatcher": []
     }
   ]
 }
-

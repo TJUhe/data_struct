@@ -19,9 +19,19 @@
 - Ninja。也可以把 `CMakePresets.json` 里的 generator 改成你本机已有的生成器。
 - VS Code 推荐扩展：C/C++、CMake Tools。
 
-Windows 上如果使用 Visual Studio Build Tools，请先打开 "x64 Native Tools Command Prompt" 或让 VS Code/CMake Tools 选中 MSVC kit。
+Windows 上如果使用 Visual Studio Build Tools，可以直接使用仓库里的 Ninja/MSVC 辅助脚本；它会自动调用 `vswhere.exe` 查找 Visual Studio，并加载 `vcvars64.bat`。如果你的安装位置比较特殊，也可以手动设置环境变量 `VS_VCVARS64` 指向 `vcvars64.bat`。
 
 ## 快速开始
+
+Windows + MSVC + Ninja 推荐：
+
+```powershell
+.\scripts\cmake_msvc_ninja.bat configure
+.\scripts\cmake_msvc_ninja.bat build
+.\scripts\cmake_msvc_ninja.bat test
+```
+
+如果你已经在 x64 Native Tools Command Prompt、Linux、macOS 或其他已配置好编译器的环境里，也可以直接使用 CMake preset：
 
 ```powershell
 cmake --preset debug
@@ -53,6 +63,8 @@ cmake --build --preset release
 5. 选择 `Debug current chapter target`。
 6. 从弹出的列表里选择 `01_complexity` 到 `10_integrated_lru` 中任意一个目标。
 
+VS Code 的默认构建任务会调用 [scripts/cmake_msvc_ninja.bat](scripts/cmake_msvc_ninja.bat)，因此在普通 VS Code 终端里也能加载 MSVC x64 环境后再执行 Ninja 构建。
+
 如果你想单步观察动态数组扩容，可以调试 `02_array_list`，在 `include/ds/dynamic_array.hpp` 的 `reserve` 和 `insert` 函数里打断点。
 
 ## 目录结构
@@ -65,6 +77,7 @@ cmake --build --preset release
 ├── examples/                   # 每章可运行示例
 ├── docs/                       # 详细教程
 ├── exercises/                  # 练习题
+├── scripts/                    # Windows MSVC + Ninja 辅助脚本
 ├── tests/                      # smoke tests
 └── .vscode/                    # VS Code 构建和调试配置
 ```
