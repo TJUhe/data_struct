@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">Growth curves for common time complexities</title>
+  <desc id="desc">A chart comparing O(1), O(log n), O(n), O(n log n), and O(n squared).</desc>
+  <rect width="760" height="360" fill="#ffffff"/>
+  <line x1="70" y1="300" x2="700" y2="300" stroke="#334155" stroke-width="2"/>
+  <line x1="70" y1="300" x2="70" y2="40" stroke="#334155" stroke-width="2"/>
+  <text x="700" y="326" font-family="Arial" font-size="16" fill="#334155" text-anchor="end">input size n</text>
+  <text x="34" y="52" font-family="Arial" font-size="16" fill="#334155" transform="rotate(-90 34 52)">work</text>
+  <path d="M80 250 L690 250" fill="none" stroke="#0f766e" stroke-width="4"/>
+  <path d="M80 285 C170 255 310 230 690 190" fill="none" stroke="#2563eb" stroke-width="4"/>
+  <path d="M80 290 L690 95" fill="none" stroke="#16a34a" stroke-width="4"/>
+  <path d="M80 295 C210 285 410 230 690 65" fill="none" stroke="#d97706" stroke-width="4"/>
+  <path d="M80 298 C210 295 545 260 690 40" fill="none" stroke="#dc2626" stroke-width="4"/>
+  <g font-family="Arial" font-size="15" fill="#0f172a">
+    <text x="590" y="244">O(1)</text>
+    <text x="585" y="188">O(log n)</text>
+    <text x="585" y="108">O(n)</text>
+    <text x="512" y="77">O(n log n)</text>
+    <text x="585" y="52">O(n^2)</text>
+  </g>
+  <text x="70" y="24" font-family="Arial" font-size="20" font-weight="700" fill="#111827">Big-O compares growth trends</text>
+</svg>
+

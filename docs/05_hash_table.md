@@ -2,6 +2,8 @@
 
 哈希表试图把 key 直接映射到数组下标：
 
+![哈希表拉链法示意图](images/05_hash_table.svg)
+
 ```text
 bucket_index = hash(key) % bucket_count
 ```
@@ -47,4 +49,3 @@ load_factor = 元素数量 / 桶数量
 
 - 初始桶数量改成 2，插入更多单词，观察扩容。
 - 写一个糟糕的哈希函数，让所有 key 都进同一个桶，体验退化。
-

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" role="img" aria-labelledby="title desc">
+  <title id="title">Singly linked list nodes</title>
+  <desc id="desc">A linked list connects nodes with next pointers, starting from head and ending at null.</desc>
+  <rect width="760" height="340" fill="#ffffff"/>
+  <text x="46" y="38" font-family="Arial" font-size="20" font-weight="700" fill="#111827">Singly linked list</text>
+  <text x="46" y="76" font-family="Arial" font-size="16" fill="#334155">Each node stores a value and a pointer to the next node.</text>
+  <text x="60" y="175" font-family="Arial" font-size="16" fill="#111827">head</text>
+  <path d="M102 170 L145 170" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <g font-family="Arial" font-size="16" text-anchor="middle">
+    <g transform="translate(150,130)">
+      <rect x="0" y="0" width="90" height="70" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+      <line x1="58" y1="0" x2="58" y2="70" stroke="#0369a1" stroke-width="2"/>
+      <text x="29" y="41">10</text><text x="74" y="41">next</text>
+    </g>
+    <g transform="translate(310,130)">
+      <rect x="0" y="0" width="90" height="70" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+      <line x1="58" y1="0" x2="58" y2="70" stroke="#15803d" stroke-width="2"/>
+      <text x="29" y="41">20</text><text x="74" y="41">next</text>
+    </g>
+    <g transform="translate(470,130)">
+      <rect x="0" y="0" width="90" height="70" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+      <line x1="58" y1="0" x2="58" y2="70" stroke="#b45309" stroke-width="2"/>
+      <text x="29" y="41">30</text><text x="74" y="41">null</text>
+    </g>
+  </g>
+  <path d="M240 165 L305 165" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M400 165 L465 165" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="46" y="274" font-family="Arial" font-size="16" fill="#334155">Fast insertion after a known node, slow random access by index.</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+</svg>
+

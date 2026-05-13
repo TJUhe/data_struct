@@ -99,6 +99,23 @@ cmake --build --preset release
 | 09 | `09_sorting` | `sorting.hpp` | [docs/09_sorting.md](docs/09_sorting.md) |
 | 10 | `10_integrated_lru` | `lru_cache.hpp` | [docs/10_integrated_lru.md](docs/10_integrated_lru.md) |
 
+## 图解索引
+
+每章教程都已经嵌入 SVG 辅助图，图片源码位于 [docs/images](docs/images)：
+
+| 章节 | 图解 |
+| --- | --- |
+| 复杂度 | [增长曲线](docs/images/01_complexity.svg) |
+| 动态数组 | [扩容与连续内存](docs/images/02_array_list.svg) |
+| 链表 | [节点与 next 指针](docs/images/03_linked_list.svg) |
+| 栈与队列 | [LIFO/FIFO 访问规则](docs/images/04_stack_queue.svg) |
+| 哈希表 | [桶与拉链法](docs/images/05_hash_table.svg) |
+| 二叉搜索树 | [左右子树顺序关系](docs/images/06_tree.svg) |
+| 堆 | [树形结构与数组映射](docs/images/07_heap_priority_queue.svg) |
+| 图 | [顶点、边和权重](docs/images/08_graph.svg) |
+| 排序 | [插入/快排/归并思路](docs/images/09_sorting.svg) |
+| LRU | [哈希表加链表](docs/images/10_integrated_lru.svg) |
+
 ## 学习方法
 
 每章推荐用同一个节奏：

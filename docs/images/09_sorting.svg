@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="390" viewBox="0 0 760 390" role="img" aria-labelledby="title desc">
+  <title id="title">Sorting algorithms at a glance</title>
+  <desc id="desc">Visual comparison of insertion sort, quick sort, and merge sort ideas.</desc>
+  <rect width="760" height="390" fill="#ffffff"/>
+  <text x="46" y="38" font-family="Arial" font-size="20" font-weight="700" fill="#111827">Sorting ideas</text>
+  <g font-family="Arial" font-size="15" fill="#111827">
+    <text x="70" y="88" font-size="17" font-weight="700">Insertion sort</text>
+    <rect x="70" y="112" width="44" height="120" fill="#bfdbfe"/><rect x="118" y="152" width="44" height="80" fill="#bfdbfe"/>
+    <rect x="166" y="132" width="44" height="100" fill="#bfdbfe"/><rect x="214" y="92" width="44" height="140" fill="#fca5a5"/>
+    <path d="M236 82 C198 56 142 72 118 104" fill="none" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="150" y="260" text-anchor="middle" fill="#334155">insert current item into sorted prefix</text>
+  </g>
+  <g font-family="Arial" font-size="15" fill="#111827">
+    <text x="330" y="88" font-size="17" font-weight="700">Quick sort</text>
+    <rect x="322" y="120" width="42" height="70" fill="#bbf7d0"/><rect x="368" y="120" width="42" height="110" fill="#bbf7d0"/>
+    <rect x="414" y="120" width="42" height="90" fill="#fde68a"/><rect x="460" y="120" width="42" height="145" fill="#fecaca"/>
+    <rect x="506" y="120" width="42" height="130" fill="#fecaca"/>
+    <text x="435" y="109" text-anchor="middle" fill="#b45309">pivot</text>
+    <text x="435" y="292" text-anchor="middle" fill="#334155">partition, then recurse</text>
+  </g>
+  <g font-family="Arial" font-size="15" fill="#111827">
+    <text x="610" y="88" font-size="17" font-weight="700">Merge sort</text>
+    <rect x="585" y="112" width="38" height="34" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="623" y="112" width="38" height="34" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="661" y="112" width="38" height="34" fill="#e0e7ff" stroke="#4338ca"/>
+    <path d="M604 155 L604 190 M680 155 L680 190 M604 190 L680 190" stroke="#475569" stroke-width="2" fill="none"/>
+    <rect x="585" y="205" width="114" height="38" fill="#dcfce7" stroke="#15803d"/>
+    <text x="642" y="229" text-anchor="middle">merged</text>
+    <text x="642" y="292" text-anchor="middle" fill="#334155">split, sort, merge</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+</svg>
+

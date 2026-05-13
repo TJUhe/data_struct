@@ -2,6 +2,8 @@
 
 链表把元素放在一个个节点里，每个节点保存值和指向下一个节点的指针。
 
+![单链表示意图](images/03_linked_list.svg)
+
 ```text
 head -> [value|next] -> [value|next] -> [value|null]
 ```
@@ -44,4 +46,3 @@ cur = next
 ```
 
 建议在 `reverse` 函数里单步调试，观察 `prev`、`cur`、`next` 三个变量。
-

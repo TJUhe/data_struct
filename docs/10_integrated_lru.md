@@ -2,6 +2,8 @@
 
 LRU 是 Least Recently Used，意思是当容量满时，淘汰最久没有被使用的元素。
 
+![LRU 缓存结构示意图](images/10_integrated_lru.svg)
+
 常见场景：
 
 - 浏览器缓存。
@@ -49,4 +51,3 @@ LRU 是 Least Recently Used，意思是当容量满时，淘汰最久没有被�
 2. 访问 1，所以 1 变成最近使用。
 3. 插入 4，容量超过 3。
 4. 此时 2 最久没用，所以被删除。
-

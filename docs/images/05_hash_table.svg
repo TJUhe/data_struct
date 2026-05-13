@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">Hash table with chaining</title>
+  <desc id="desc">Keys are hashed into buckets. Colliding keys are stored in a chain.</desc>
+  <rect width="760" height="360" fill="#ffffff"/>
+  <text x="46" y="38" font-family="Arial" font-size="20" font-weight="700" fill="#111827">Hash table: bucket + chain</text>
+  <text x="46" y="74" font-family="Arial" font-size="16" fill="#334155">hash(key) % bucket_count chooses a bucket.</text>
+  <g font-family="Arial" font-size="15">
+    <g transform="translate(70,105)">
+      <rect x="0" y="0" width="110" height="42" fill="#e2e8f0" stroke="#475569"/>
+      <text x="55" y="27" text-anchor="middle">bucket 0</text>
+      <rect x="0" y="52" width="110" height="42" fill="#e2e8f0" stroke="#475569"/>
+      <text x="55" y="79" text-anchor="middle">bucket 1</text>
+      <rect x="0" y="104" width="110" height="42" fill="#e2e8f0" stroke="#475569"/>
+      <text x="55" y="131" text-anchor="middle">bucket 2</text>
+      <rect x="0" y="156" width="110" height="42" fill="#e2e8f0" stroke="#475569"/>
+      <text x="55" y="183" text-anchor="middle">bucket 3</text>
+    </g>
+    <g transform="translate(230,157)">
+      <rect x="0" y="0" width="92" height="42" rx="5" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+      <text x="46" y="27" text-anchor="middle">tree: 3</text>
+      <path d="M92 21 L140 21" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+      <rect x="145" y="0" width="98" height="42" rx="5" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+      <text x="194" y="27" text-anchor="middle">graph: 2</text>
+    </g>
+    <g transform="translate(230,209)">
+      <rect x="0" y="0" width="92" height="42" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+      <text x="46" y="27" text-anchor="middle">hash: 1</text>
+    </g>
+  </g>
+  <path d="M180 178 L225 178" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M180 230 L225 230" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="46" y="320" font-family="Arial" font-size="16" fill="#334155">Good hash distribution keeps chains short; high load factor triggers rehash.</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+</svg>
+
