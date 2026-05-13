@@ -1,0 +1,14 @@
+build/
+out/
+.cache/
+.vs/
+.vscode/ipch/
+*.user
+*.suo
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.log
+*.tmp
+

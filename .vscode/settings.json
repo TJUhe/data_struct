@@ -1,0 +1,16 @@
+{
+  "cmake.useCMakePresets": "always",
+  "cmake.configureOnOpen": true,
+  "cmake.buildDirectory": "${workspaceFolder}/build/debug",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "files.associations": {
+    "*.hpp": "cpp",
+    "iostream": "cpp",
+    "vector": "cpp",
+    "list": "cpp",
+    "unordered_map": "cpp",
+    "queue": "cpp",
+    "stack": "cpp"
+  }
+}
+

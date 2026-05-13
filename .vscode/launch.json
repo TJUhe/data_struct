@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug current chapter target",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/debug/bin/${input:targetName}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "integratedTerminal",
+      "preLaunchTask": "CMake: build debug"
+    },
+    {
+      "name": "Debug smoke tests",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/debug/bin/ds_smoke_tests.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "CMake: build debug"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "targetName",
+      "type": "pickString",
+      "description": "Choose the executable to debug",
+      "options": [
+        "01_complexity",
+        "02_array_list",
+        "03_linked_list",
+        "04_stack_queue",
+        "05_hash_table",
+        "06_tree",
+        "07_heap_priority_queue",
+        "08_graph",
+        "09_sorting",
+        "10_integrated_lru"
+      ],
+      "default": "02_array_list"
+    }
+  ]
+}
+

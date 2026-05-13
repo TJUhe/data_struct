@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake: configure",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--preset", "debug"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "CMake: build debug",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "--preset", "debug"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": "CMake: configure",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "CTest: run smoke tests",
+      "type": "shell",
+      "command": "ctest",
+      "args": ["--preset", "debug"],
+      "dependsOn": "CMake: build debug",
+      "problemMatcher": []
+    }
+  ]
+}
+
