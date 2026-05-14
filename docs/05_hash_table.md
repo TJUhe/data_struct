@@ -37,6 +37,8 @@ load_factor = 元素数量 / 桶数量
 - `insert_or_assign`：已有 key 就更新，不存在就插入。
 - `rehash`：创建更多桶，把所有元素重新分布。
 
+![哈希表 rehash 过程示意图](images/05_hash_rehash.svg)
+
 ## 本章实验
 
 运行：

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="440" viewBox="0 0 860 440" role="img" aria-labelledby="title desc">
+  <title id="title">Heap sift down after pop</title>
+  <desc id="desc">After removing the heap top, the last element moves to root and sifts down by swapping with the larger child.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#fff1f2"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/></marker>
+  </defs>
+  <rect width="860" height="440" fill="url(#bg)"/>
+  <rect x="34" y="28" width="792" height="384" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="70" y="72" font-family="Arial" font-size="24" font-weight="700" fill="#0f172a">pop(): move last to root, then sift down</text>
+  <g transform="translate(110,130)" font-family="Arial" text-anchor="middle">
+    <line x1="185" y1="42" x2="105" y2="105" stroke="#64748b" stroke-width="3"/>
+    <line x1="185" y1="42" x2="265" y2="105" stroke="#64748b" stroke-width="3"/>
+    <line x1="105" y1="145" x2="65" y2="205" stroke="#64748b" stroke-width="3"/>
+    <line x1="105" y1="145" x2="145" y2="205" stroke="#64748b" stroke-width="3"/>
+    <circle cx="185" cy="35" r="28" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/><text x="185" y="42">10</text>
+    <circle cx="105" cy="125" r="28" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="105" y="132">70</text>
+    <circle cx="265" cy="125" r="28" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="265" y="132">60</text>
+    <circle cx="65" cy="225" r="28" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="65" y="232">30</text>
+    <circle cx="145" cy="225" r="28" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="145" y="232">20</text>
+    <path d="M164 58 C118 72 99 84 104 96" fill="none" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="212" y="92" fill="#dc2626" font-size="15">swap with larger child</text>
+  </g>
+  <g transform="translate(530,140)" font-family="Arial">
+    <rect x="0" y="0" width="230" height="174" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="18" y="34" font-size="17" font-weight="700" fill="#0f172a">sift down rule</text>
+    <text x="18" y="68" font-size="14" fill="#475569">1. compare left and right child</text>
+    <text x="18" y="100" font-size="14" fill="#475569">2. choose higher priority child</text>
+    <text x="18" y="132" font-size="14" fill="#475569">3. swap if child beats parent</text>
+    <text x="18" y="156" font-size="14" fill="#475569">4. continue at new index</text>
+  </g>
+</svg>
+

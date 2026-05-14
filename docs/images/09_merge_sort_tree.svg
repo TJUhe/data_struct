@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="440" viewBox="0 0 860 440" role="img" aria-labelledby="title desc">
+  <title id="title">Merge sort recursion tree</title>
+  <desc id="desc">Merge sort splits an array into halves and merges sorted halves back together.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#fefce8"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+  </defs>
+  <rect width="860" height="440" fill="url(#bg)"/>
+  <rect x="34" y="28" width="792" height="384" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="70" y="72" font-family="Arial" font-size="24" font-weight="700" fill="#0f172a">Merge sort: split down, merge up</text>
+  <g font-family="Arial" font-size="15" text-anchor="middle">
+    <rect x="300" y="105" width="260" height="42" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="430" y="132">9 4 6 2 8 1 5 3</text>
+    <line x1="430" y1="147" x2="270" y2="190" stroke="#94a3b8" stroke-width="2"/><line x1="430" y1="147" x2="590" y2="190" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="155" y="190" width="230" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="270" y="216">9 4 6 2</text>
+    <rect x="475" y="190" width="230" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="590" y="216">8 1 5 3</text>
+    <line x1="270" y1="230" x2="200" y2="270" stroke="#94a3b8" stroke-width="2"/><line x1="270" y1="230" x2="340" y2="270" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="590" y1="230" x2="520" y2="270" stroke="#94a3b8" stroke-width="2"/><line x1="590" y1="230" x2="660" y2="270" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="155" y="270" width="90" height="34" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="200" y="292">4 9</text>
+    <rect x="295" y="270" width="90" height="34" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="340" y="292">2 6</text>
+    <rect x="475" y="270" width="90" height="34" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="520" y="292">1 8</text>
+    <rect x="615" y="270" width="90" height="34" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="660" y="292">3 5</text>
+    <rect x="260" y="340" width="340" height="42" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="430" y="367">1 2 3 4 5 6 8 9</text>
+    <text x="126" y="126" fill="#475569" text-anchor="start">split: log n levels</text>
+    <text x="626" y="362" fill="#475569" text-anchor="start">merge: O(n) per level</text>
+  </g>
+</svg>
+

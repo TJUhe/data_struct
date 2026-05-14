@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="440" viewBox="0 0 860 440" role="img" aria-labelledby="title desc">
+  <title id="title">Dijkstra edge relaxation</title>
+  <desc id="desc">Dijkstra updates a neighbor distance when the route through the current vertex is shorter.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eff6ff"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker>
+  </defs>
+  <rect width="860" height="440" fill="url(#bg)"/>
+  <rect x="34" y="28" width="792" height="384" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="70" y="72" font-family="Arial" font-size="24" font-weight="700" fill="#0f172a">Dijkstra: relax an edge</text>
+  <g transform="translate(92,128)" font-family="Arial" text-anchor="middle">
+    <line x1="80" y1="90" x2="250" y2="50" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="80" y1="90" x2="250" y2="155" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="250" y1="155" x2="420" y2="95" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+    <circle cx="80" cy="90" r="32" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="80" y="97">0</text>
+    <circle cx="250" cy="155" r="32" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="250" y="162">2</text>
+    <circle cx="420" cy="95" r="32" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/><text x="420" y="102">5</text>
+    <text x="165" y="146" fill="#2563eb">dist 9</text>
+    <text x="338" y="145" fill="#2563eb">weight 2</text>
+    <text x="420" y="49" fill="#dc2626" font-weight="700">old dist 14</text>
+    <text x="250" y="210" fill="#15803d" font-weight="700">current dist 9</text>
+  </g>
+  <g transform="translate(575,132)" font-family="Arial">
+    <rect x="0" y="0" width="210" height="166" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="18" y="36" font-size="17" font-weight="700" fill="#0f172a">relax formula</text>
+    <text x="18" y="72" font-size="15" fill="#475569">candidate = 9 + 2</text>
+    <text x="18" y="105" font-size="15" fill="#475569">candidate = 11</text>
+    <text x="18" y="138" font-size="15" fill="#2563eb">11 &lt; 14, update</text>
+  </g>
+  <text x="70" y="360" font-family="Arial" font-size="16" fill="#475569">The priority queue then receives the improved state: (distance 11, vertex 5).</text>
+</svg>
+

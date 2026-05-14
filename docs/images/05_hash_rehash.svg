@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="430" viewBox="0 0 860 430" role="img" aria-labelledby="title desc">
+  <title id="title">Hash table rehash redistributes entries</title>
+  <desc id="desc">When load factor is high, a hash table grows buckets and redistributes keys.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#f5f3ff"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect width="860" height="430" fill="url(#bg)"/>
+  <rect x="34" y="28" width="792" height="374" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="70" y="72" font-family="Arial" font-size="24" font-weight="700" fill="#0f172a">Rehash: more buckets, shorter chains</text>
+  <g transform="translate(82,125)" font-family="Arial" font-size="14">
+    <text x="0" y="-18" font-size="17" font-weight="700" fill="#0f172a">before: 4 buckets</text>
+    <rect x="0" y="0" width="90" height="38" fill="#ede9fe" stroke="#7c3aed"/><text x="45" y="25" text-anchor="middle">0</text>
+    <rect x="0" y="48" width="90" height="38" fill="#ede9fe" stroke="#7c3aed"/><text x="45" y="73" text-anchor="middle">1</text>
+    <rect x="0" y="96" width="90" height="38" fill="#ede9fe" stroke="#7c3aed"/><text x="45" y="121" text-anchor="middle">2</text>
+    <rect x="0" y="144" width="90" height="38" fill="#ede9fe" stroke="#7c3aed"/><text x="45" y="169" text-anchor="middle">3</text>
+    <rect x="120" y="48" width="70" height="34" rx="6" fill="#dbeafe" stroke="#2563eb"/><text x="155" y="70" text-anchor="middle">cpp</text>
+    <rect x="198" y="48" width="70" height="34" rx="6" fill="#dbeafe" stroke="#2563eb"/><text x="233" y="70" text-anchor="middle">tree</text>
+    <rect x="276" y="48" width="70" height="34" rx="6" fill="#dbeafe" stroke="#2563eb"/><text x="311" y="70" text-anchor="middle">hash</text>
+    <path d="M90 67 L116 67 M190 65 L194 65 M268 65 L272 65" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+  <path d="M390 225 C430 178 464 178 505 225" stroke="#7c3aed" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <text x="448" y="176" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed" text-anchor="middle">rehash</text>
+  <g transform="translate(525,105)" font-family="Arial" font-size="14">
+    <text x="0" y="-18" font-size="17" font-weight="700" fill="#0f172a">after: 8 buckets</text>
+    <g fill="#f3e8ff" stroke="#7c3aed">
+      <rect x="0" y="0" width="80" height="30"/><rect x="0" y="36" width="80" height="30"/><rect x="0" y="72" width="80" height="30"/><rect x="0" y="108" width="80" height="30"/>
+      <rect x="0" y="144" width="80" height="30"/><rect x="0" y="180" width="80" height="30"/><rect x="0" y="216" width="80" height="30"/><rect x="0" y="252" width="80" height="30"/>
+    </g>
+    <g text-anchor="middle"><text x="40" y="21">0</text><text x="40" y="57">1</text><text x="40" y="93">2</text><text x="40" y="129">3</text><text x="40" y="165">4</text><text x="40" y="201">5</text><text x="40" y="237">6</text><text x="40" y="273">7</text></g>
+    <rect x="110" y="36" width="70" height="30" rx="6" fill="#dbeafe" stroke="#2563eb"/><text x="145" y="57" text-anchor="middle">cpp</text>
+    <rect x="110" y="144" width="70" height="30" rx="6" fill="#dcfce7" stroke="#15803d"/><text x="145" y="165" text-anchor="middle">tree</text>
+    <rect x="110" y="216" width="70" height="30" rx="6" fill="#fef3c7" stroke="#b45309"/><text x="145" y="237" text-anchor="middle">hash</text>
+  </g>
+</svg>
+

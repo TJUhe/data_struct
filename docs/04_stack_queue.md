@@ -44,6 +44,8 @@
 - `head == tail` 表示空。
 - `next(tail) == head` 表示满。
 
+![循环队列环形缓冲区示意图](images/04_queue_ring_buffer.svg)
+
 ## 本章实验
 
 运行：

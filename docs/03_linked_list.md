@@ -37,6 +37,8 @@ cur = next
 
 顺序错了，就可能再也找不到后面的链。
 
+![链表反转三指针示意图](images/03_linked_reverse.svg)
+
 ## 本章实验
 
 运行：

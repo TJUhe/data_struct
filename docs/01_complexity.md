@@ -41,6 +41,8 @@ for (int i = 0; i < n; ++i) {
 
 大约执行 `n * (n - 1) / 2` 次，所以是 `O(n^2)`。
 
+![嵌套循环工作量示意图](images/01_complexity_nested_loops.svg)
+
 ## 本章实验
 
 运行：

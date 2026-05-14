@@ -47,6 +47,8 @@ Dijkstra 用于非负权图的单源最短路径。它每次选择当前距离�
 
 本仓库示例直接使用 `std::priority_queue` 辅助实现，因为重点是图算法本身。
 
+![Dijkstra 松弛边示意图](images/08_dijkstra_relaxation.svg)
+
 ## 本章实验
 
 运行：

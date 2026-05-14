@@ -37,6 +37,8 @@ LRU 是 Least Recently Used，意思是当容量满时，淘汰最久没有被�
 - `list<pair<Key, Value>>` 维护使用顺序。
 - 每次访问，把节点 splice 到链表头部。
 
+![LRU 访问后移动节点示意图](images/10_lru_touch.svg)
+
 ## 本章实验
 
 运行：

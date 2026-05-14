@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="430" viewBox="0 0 860 430" role="img" aria-labelledby="title desc">
+  <title id="title">Dynamic array insertion shifts elements</title>
+  <desc id="desc">Inserting into the middle of a dynamic array moves elements to the right to make room.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#ecfeff"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.13"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/></marker>
+  </defs>
+  <rect width="860" height="430" fill="url(#bg)"/>
+  <rect x="34" y="28" width="792" height="374" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="70" y="72" font-family="Arial" font-size="24" font-weight="700" fill="#0f172a">Insert at index 2: move the tail first</text>
+  <text x="70" y="102" font-family="Arial" font-size="15" fill="#475569">Elements shift from right to left order, otherwise values are overwritten.</text>
+  <g transform="translate(92,138)" font-family="Arial" text-anchor="middle">
+    <text x="-36" y="30" text-anchor="start" font-size="16" font-weight="700" fill="#334155">before</text>
+    <g fill="#dbeafe" stroke="#1d4ed8" stroke-width="2">
+      <rect x="80" y="0" width="74" height="54" rx="8"/><rect x="154" y="0" width="74" height="54" rx="8"/><rect x="228" y="0" width="74" height="54" rx="8"/><rect x="302" y="0" width="74" height="54" rx="8"/><rect x="376" y="0" width="74" height="54" rx="8"/>
+    </g>
+    <rect x="450" y="0" width="74" height="54" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="117" y="34">A</text><text x="191" y="34">B</text><text x="265" y="34">C</text><text x="339" y="34">D</text><text x="413" y="34">E</text>
+    <text x="265" y="78" font-size="13" fill="#dc2626">insert X here</text>
+    <path d="M265 70 L265 58" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+  <g transform="translate(92,245)" font-family="Arial" text-anchor="middle">
+    <text x="-36" y="30" text-anchor="start" font-size="16" font-weight="700" fill="#334155">shift</text>
+    <g fill="#fee2e2" stroke="#dc2626" stroke-width="2">
+      <rect x="302" y="0" width="74" height="54" rx="8"/><rect x="376" y="0" width="74" height="54" rx="8"/><rect x="450" y="0" width="74" height="54" rx="8"/>
+    </g>
+    <g fill="#dbeafe" stroke="#1d4ed8" stroke-width="2">
+      <rect x="80" y="0" width="74" height="54" rx="8"/><rect x="154" y="0" width="74" height="54" rx="8"/><rect x="228" y="0" width="74" height="54" rx="8"/>
+    </g>
+    <text x="117" y="34">A</text><text x="191" y="34">B</text><text x="265" y="34">X</text><text x="339" y="34">C</text><text x="413" y="34">D</text><text x="487" y="34">E</text>
+    <path d="M414 112 L487 112" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M340 112 L413 112" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M266 112 L339 112" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+  <text x="590" y="180" font-family="Arial" font-size="18" font-weight="700" fill="#0f172a">Cost</text>
+  <text x="590" y="211" font-family="Arial" font-size="15" fill="#475569">Tail insert: often O(1)</text>
+  <text x="590" y="238" font-family="Arial" font-size="15" fill="#475569">Middle insert: O(n)</text>
+</svg>
+

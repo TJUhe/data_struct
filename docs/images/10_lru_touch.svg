@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="440" viewBox="0 0 860 440" role="img" aria-labelledby="title desc">
+  <title id="title">LRU cache touch operation</title>
+  <desc id="desc">Accessing a cached key moves its list node to the front while the hash map still points to it.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#f0fdfa"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/></marker>
+  </defs>
+  <rect width="860" height="440" fill="url(#bg)"/>
+  <rect x="34" y="28" width="792" height="384" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="70" y="72" font-family="Arial" font-size="24" font-weight="700" fill="#0f172a">get(1): touch node, move it to front</text>
+  <g transform="translate(86,130)" font-family="Arial" text-anchor="middle">
+    <text x="0" y="30" text-anchor="start" font-weight="700" fill="#334155">before</text>
+    <rect x="115" y="0" width="104" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="167" y="31">3 tree</text>
+    <rect x="265" y="0" width="104" height="50" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/><text x="317" y="31">1 array</text>
+    <rect x="415" y="0" width="104" height="50" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2"/><text x="467" y="31">2 list</text>
+    <path d="M219 25 L259 25 M369 25 L409 25" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M317 58 C305 95 230 100 184 62" stroke="#0f766e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+  <g transform="translate(86,250)" font-family="Arial" text-anchor="middle">
+    <text x="0" y="30" text-anchor="start" font-weight="700" fill="#334155">after</text>
+    <rect x="115" y="0" width="104" height="50" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/><text x="167" y="31">1 array</text>
+    <rect x="265" y="0" width="104" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="317" y="31">3 tree</text>
+    <rect x="415" y="0" width="104" height="50" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2"/><text x="467" y="31">2 list</text>
+    <path d="M219 25 L259 25 M369 25 L409 25" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+  <g transform="translate(640,136)" font-family="Arial">
+    <rect x="0" y="0" width="145" height="170" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="18" y="34" font-size="17" font-weight="700" fill="#0f172a">O(1) trick</text>
+    <text x="18" y="70" font-size="14" fill="#475569">map finds node</text>
+    <text x="18" y="100" font-size="14" fill="#475569">list splice moves</text>
+    <text x="18" y="130" font-size="14" fill="#475569">no scan needed</text>
+  </g>
+</svg>
+
