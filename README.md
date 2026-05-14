@@ -97,6 +97,10 @@ VS Code 的默认构建任务会调用 [scripts/cmake_msvc_ninja.bat](scripts/cm
 9. 排序：比较插入排序、快速排序、归并排序。
 10. 综合项目：用哈希表加链表实现 LRU 缓存。
 
+## 源码专题
+
+- [OpenFOAM 数据结构源码导读](openfoam_data_structures/README.md)：从 `UList`、`Field`、`GeometricField`、`polyMesh`、`dictionary` 和 `objectRegistry` 观察工业级 CFD 软件里的数据结构设计。
+
 ## 每章文件
 
 | 章节 | 示例目标 | 主要头文件 | 文档 |
