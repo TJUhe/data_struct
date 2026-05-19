@@ -2,6 +2,8 @@
 
 参考答案见 [SOLUTIONS.md](SOLUTIONS.md)。建议先独立做一遍，再用答案校对思路；数据结构题的价值大多藏在“为什么这样改指针/移动元素”的过程里。
 
+如果你想做更系统的在线题训练，去看 [LeetCode 题库总览](leetcode/README.md)。
+
 ## 基础练习
 
 1. 给 `DynamicArray` 增加 `pop_back` 和 `front/back`。
