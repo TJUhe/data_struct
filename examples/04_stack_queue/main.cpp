@@ -5,7 +5,7 @@
 #include <string>
 
 bool is_balanced(const std::string& text) {
-    ds::Stack<char> stack;
+   ds::Stack<char> stack;
     for (char ch : text) {
         if (ch == '(' || ch == '[' || ch == '{') {
             stack.push(ch);
@@ -22,6 +22,26 @@ bool is_balanced(const std::string& text) {
         }
     }
     return stack.empty();
+}
+
+std::string to_binary(size_t value){
+    if (value == 0)
+    {
+        return "0";
+    }
+
+    ds::Stack<char> bits;
+    while(value > 0){
+        bits.push(static_cast<char>('0' + value%2));
+        value /= 2;
+    }
+
+    std::string res;
+    while (!bits.empty())
+    {
+        res.push_back(bits.pop());
+    }
+    return res;
 }
 
 int main() {
