@@ -103,6 +103,8 @@ VS Code 的默认构建任务会调用 [scripts/cmake_msvc_ninja.bat](scripts/cm
 
 - [题库总览](exercises/leetcode/README.md)
 
+每个专题还有对应的 C++ 可编译源码和 `ctest` 入口，可以直接下断点调试。
+
 ## 源码专题
 
 - [OpenFOAM 数据结构源码导读](openfoam_data_structures/README.md)：从 `UList`、`Field`、`GeometricField`、`polyMesh`、`dictionary` 和 `objectRegistry` 观察工业级 CFD 软件里的数据结构设计。

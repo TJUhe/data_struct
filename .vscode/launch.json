@@ -23,6 +23,17 @@
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "preLaunchTask": "CMake: build debug"
+    },
+    {
+      "name": "Debug LeetCode chapter target",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/debug/bin/${input:leetcodeTarget}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "CMake: build debug"
     }
   ],
   "inputs": [
@@ -43,7 +54,22 @@
         "10_integrated_lru"
       ],
       "default": "02_array_list"
+    },
+    {
+      "id": "leetcodeTarget",
+      "type": "pickString",
+      "description": "Choose the LeetCode practice target",
+      "options": [
+        "leetcode_01_arrays_prefix_two_pointers",
+        "leetcode_02_linked_list",
+        "leetcode_03_stack_queue",
+        "leetcode_04_hash_table",
+        "leetcode_05_tree_bst",
+        "leetcode_06_heap_priority_queue",
+        "leetcode_07_graph",
+        "leetcode_08_sorting_design"
+      ],
+      "default": "leetcode_01_arrays_prefix_two_pointers"
     }
   ]
 }
-

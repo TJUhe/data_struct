@@ -39,10 +39,10 @@ add_ds_example(09_sorting examples/09_sorting/main.cpp)
 add_ds_example(10_integrated_lru examples/10_integrated_lru/main.cpp)
 
 enable_testing()
+add_subdirectory(exercises/leetcode)
 add_executable(ds_smoke_tests tests/smoke_tests.cpp)
 target_link_libraries(ds_smoke_tests PRIVATE ds)
 set_target_properties(ds_smoke_tests PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
 )
 add_test(NAME ds_smoke_tests COMMAND ds_smoke_tests)
-
